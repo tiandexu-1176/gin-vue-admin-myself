@@ -1,11 +1,10 @@
 package main
 
 import (
-	"server/initialize"
+	"github.com/tiandexu-1176/gin-vue-admin-myself/src/server/initialize"
 )
 
-
-func main(){
+func main() {
 
 	initialize.Redis()
 }
