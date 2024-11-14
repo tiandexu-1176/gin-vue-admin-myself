@@ -4,7 +4,7 @@ package global
 
 import (
 	"server/config"
-	"github.com/tiandexu-1176/gin-vue-admin-myself/github.com/redis/go-redis/v9"
+	"github.com/redis/go-redis/v9"
 )
 
 var (

@@ -1,0 +1,7 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = https://github.com/tiandexu-1176/gin-vue-admin-myself
+	fetch = +refs/heads/*:refs/remotes/origin/*
