@@ -3,7 +3,7 @@ package initialize
 import(
 	"context"
 	"github.com/redis/go-redis/v9"
-	"server/global"
+	"github.com/tiandexu-1176/gin-vue-admin-myself/server/global"
 )
 
 
