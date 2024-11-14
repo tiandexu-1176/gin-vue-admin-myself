@@ -4,6 +4,7 @@ import(
 	"context"
 	"github.com/redis/go-redis/v9"
 	"github.com/tiandexu-1176/gin-vue-admin-myself/server/global"
+	"github.com/tiandexu-1176/gin-vue-admin-myself/server/config"
 )
 
 
@@ -11,7 +12,7 @@ import(
 func initRedisClient(redisCfg config.Redis)(redis.UniversalClient, error) {
 
 	var client redis.UniversalClient
-	if redisCfg.useCluster {
+	if redisCfg.UseCluster {
 		client = redis.NewClusterClient(&redis.ClusterOptions {
 			Addrs: redisCfg.ClusterAddrs,
 			Password: redisCfg.Password,
@@ -23,12 +24,12 @@ func initRedisClient(redisCfg config.Redis)(redis.UniversalClient, error) {
 			DB: redisCfg.DB,
 		})
 	}
-	pong, err: = client.Ping(context.Background()).Result()
+	pong, err := client.Ping(context.Background()).Result()
 	
 	return client, nil
 }
 
-funct Redis() {
+func Redis() {
 	redisClient, err := initRedisClient(global.GVA_CONFIG.Server)
 	if nil != err {
 		

@@ -5,6 +5,6 @@ type Redis struct {
 	Addr string `mapstructure: "addr" json:"addr" yaml: "addr"`
 	Password string `mapstructure:"password" json:"password" yaml:"password"`
 	DB int `mapstructure "db" json: "db" yaml:"db"`
-	UserCluster bool `mapstructure:"useCluster" json:"useCluster" yaml:"useCluster"`
-	 ClusterAddrs []string `mapstructure:"clusterAddrs" json:"clusterAddrs" yaml:"clusterAddrs"`
+	UseCluster bool `mapstructure:"useCluster" json:"useCluster" yaml:"useCluster"`
+	ClusterAddrs []string `mapstructure:"clusterAddrs" json:"clusterAddrs" yaml:"clusterAddrs"`
 }

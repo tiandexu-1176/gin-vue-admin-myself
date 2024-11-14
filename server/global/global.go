@@ -3,7 +3,7 @@ package global
 
 
 import (
-	"server/config"
+	"github.com/tiandexu-1176/gin-vue-admin-myself/server/config"
 	"github.com/redis/go-redis/v9"
 )
 
